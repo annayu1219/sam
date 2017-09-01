@@ -1,0 +1,9 @@
+<h1>Criteria</h1>
+
+<p>
+	<% @criteria.each do |criterium| %>
+	    <p>Description : <%=criterium.description%></p>
+		<p>Category : <%=criterium.category%></p>
+	<%end%>
+</p>
+<%= link_to 'New Criteria', new_criterium_path%>

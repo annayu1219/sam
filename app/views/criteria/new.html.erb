@@ -1,0 +1,15 @@
+<h1>New Criteria </h1>
+
+<%= form_for :criterium, url: criteria_path do |c| %>
+<p>
+	<%= c.label :description%>
+	<%= c.text_field :description%>
+</p>
+<p>
+	<%= c.label :category%>
+	<%= c.text_field :category%>
+</p>
+	
+ <%= c.submit%>
+<%end%>
+<p><%= link_to 'Back', criteria_path%></p>
